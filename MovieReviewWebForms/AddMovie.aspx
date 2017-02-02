@@ -4,13 +4,22 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Add A Movie</title>
+    <link href="content/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
+    <div class="container">
+        <form id="form1" runat="server">
+            <div class="form-group">
+                <input class="form-control" type="text" name="title" placeholder="Title" />
+                <input class="form-control" type="text" name="genre" placeholder="Genre" />
+                <input class="form-control" type="text" name="imdburl" placeholder="IMDB Url" />
+                <input class="form-control" type="text" name="releasedate" placeholder="Release Date" />
+              
+                <input type="submit" class="btn btn-success" />
+            </div>
+        </form>
+
     </div>
-    </form>
 </body>
 </html>

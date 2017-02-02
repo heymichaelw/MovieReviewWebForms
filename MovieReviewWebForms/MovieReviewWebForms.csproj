@@ -172,6 +172,14 @@
     <Compile Include="Migrations\201702021830037_Initial.Designer.cs">
       <DependentUpon>201702021830037_Initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201702021940081_ChangedReleaseDateToString.cs" />
+    <Compile Include="Migrations\201702021940081_ChangedReleaseDateToString.Designer.cs">
+      <DependentUpon>201702021940081_ChangedReleaseDateToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201702021942231_FieldToString.cs" />
+    <Compile Include="Migrations\201702021942231_FieldToString.Designer.cs">
+      <DependentUpon>201702021942231_FieldToString.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\Review.cs" />
@@ -181,6 +189,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201702021830037_Initial.resx">
       <DependentUpon>201702021830037_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702021940081_ChangedReleaseDateToString.resx">
+      <DependentUpon>201702021940081_ChangedReleaseDateToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201702021942231_FieldToString.resx">
+      <DependentUpon>201702021942231_FieldToString.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
