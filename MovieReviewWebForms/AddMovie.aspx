@@ -6,6 +6,7 @@
 <head runat="server">
     <title>Add A Movie</title>
     <link href="content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="app.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <div class="container">
