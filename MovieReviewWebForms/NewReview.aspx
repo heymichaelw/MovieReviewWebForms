@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditMovie.aspx.cs" Inherits="MovieReviewWebForms.EditMovie" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="NewReview.aspx.cs" Inherits="MovieReviewWebForms.NewReview" %>
 
 <!DOCTYPE html>
 
@@ -8,7 +8,7 @@
     <link href="content/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="contaier">
+    <div class="container">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
 
@@ -38,15 +38,22 @@
             </div>
 
         </nav>
-        <form id="form1" runat="server">
-            <div class="form-group">
-                <input class="form-control" type="text" value="<%=movieInstance.Title %>" name="title" />
-                <input class="form-control" type="text" value="<%=movieInstance.Genre %>" name="genre" />
-                <input class="form-control" type="text" value="<%=movieInstance.IMDBUrl %>" name="imdburl" />
-                <input class="form-control" type="text" value="<%=movieInstance.ReleaseDate %>" name="releasedate" />
-                <input type="submit" class="btn btn-success" />
-            </div>
-        </form>
+        <h3>Which movie would you like to review?</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%foreach (var movie in Movies)
+                    { %>
+                <tr>
+                    <td><a href="AddReview.aspx?id=<%=movie.Id %>"><%=movie.Title %></a></td>
+                </tr>
+                <%} %>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>

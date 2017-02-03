@@ -26,6 +26,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="MovieList.aspx">Movies</a></li>
                         <li><a href="AddMovie.aspx">Add A New Movie</a></li>
+                        <li><a href="NewReview.aspx">Add A New Review</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class="btn btn-default" href="Default.aspx" role="button">

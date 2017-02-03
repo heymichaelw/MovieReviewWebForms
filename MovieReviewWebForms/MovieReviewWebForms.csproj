@@ -104,6 +104,7 @@
   <ItemGroup>
     <Content Include="app.css" />
     <Content Include="MovieList.aspx" />
+    <Content Include="NewReview.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -191,6 +192,13 @@
     </Compile>
     <Compile Include="MovieList.aspx.designer.cs">
       <DependentUpon>MovieList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewReview.aspx.cs">
+      <DependentUpon>NewReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewReview.aspx.designer.cs">
+      <DependentUpon>NewReview.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReviewContext.cs" />
