@@ -41,10 +41,12 @@
         <table class="table">
             <thead>
                 <tr>
+                    <th></th>
                     <th>Title</th>
                     <th>Genre</th>
                     <th>IMDB URL</th>
                     <th>Release Date</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -53,13 +55,18 @@
                 <tr>
                     <td>
                         <a class="btn btn-default" href="EditMovie.aspx?id=<%=movie.Id %>" role="button">
-                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Edit
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Edit
                         </a>
                     </td>
                     <td><%=movie.Title %> </td>
                     <td><%=movie.Genre %></td>
                     <td><a href="<%=movie.IMDBUrl %>"><%=movie.IMDBUrl %></a></td>
                     <td><%=movie.ReleaseDate %></td>
+                    <td>
+                        <a class="btn btn-default" href="AddReview.aspx?id=<%=movie.Id %>" role="button">
+                            <span class="glyphicon glyphicon-film" aria-hidden="true"></span> Rate
+                        </a>
+                    </td>
                 </tr>
                 <%} %>
             </tbody>

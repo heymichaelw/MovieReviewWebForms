@@ -17,7 +17,7 @@ namespace MovieReviewWebForms
         {
             using (var db = new ReviewContext())
             {
-                Movies = db.Movies.ToList();
+                Movies = db.Movies.OrderBy(x => x.Title).ToList();
             }
         }
     }

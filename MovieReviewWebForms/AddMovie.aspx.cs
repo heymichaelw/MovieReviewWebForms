@@ -25,6 +25,7 @@ namespace MovieReviewWebForms
                     };
                     db.Movies.Add(movie);
                     db.SaveChanges();
+                    Response.Redirect("MovieList.aspx");
                 }
 
             }
