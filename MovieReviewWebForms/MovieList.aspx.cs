@@ -12,6 +12,7 @@ namespace MovieReviewWebForms
     {
 
         public List<Movie> Movies;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             using (var db = new ReviewContext())

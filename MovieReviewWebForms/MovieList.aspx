@@ -23,6 +23,11 @@
                 <%foreach (var movie in Movies)
                     { %>
                 <tr>
+                    <td>
+                        <a class="btn btn-default" href="EditMovie.aspx?id=<%=movie.Id %>" role="button">
+                            <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>Edit
+                        </a>
+                    </td>
                     <td><%=movie.Title %> </td>
                     <td><%=movie.Genre %></td>
                     <td><a href="<%=movie.IMDBUrl %>"><%=movie.IMDBUrl %></a></td>

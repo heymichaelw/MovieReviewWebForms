@@ -8,10 +8,16 @@
     <link href="content/bootstrap.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
-    
+    <div class="contaier">
+        <form id="form1" runat="server">
+            <div class="form-group">
+                <input class="form-control" type="text" value="<%=movieInstance.Title %>" name="title" />
+                <input class="form-control" type="text" value="<%=movieInstance.Genre %>" name="genre"/>
+                <input class="form-control" type="text" value="<%=movieInstance.IMDBUrl %>" name="imdburl"/>
+                <input class="form-control" type="text" value="<%=movieInstance.ReleaseDate %>" name="releasedate"/>
+                <input type="submit" class="btn btn-success" />
+            </div>
+        </form>
     </div>
-    </form>
 </body>
 </html>
